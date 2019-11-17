@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "fabric-icons-spfx",
+    "libraryId": "8aa2d9ea-7c50-46ac-a758-c148d0bf598c",
+    "environment": "spo"
+  }
+}
