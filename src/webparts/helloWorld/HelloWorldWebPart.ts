@@ -18,21 +18,14 @@ export interface IHelloWorldWebPartProps {
 export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorldWebPartProps> {
 
   public render(): void {
-    const element: React.ReactElement<IHelloWorldProps > = React.createElement(
+    const element: React.ReactElement<IHelloWorldProps> = React.createElement(
       HelloWorld,
       {
         description: this.properties.description
       }
     );
 
-    const iconElement: React.ReactElement<{}> = React.createElement(
-      'i',
-      {
-        className: 'ms-Icon ms-Icon--RecurringEvent'
-      }
-    );
-
-    ReactDom.render(iconElement, this.domElement);
+    ReactDom.render(element, this.domElement);
   }
 
   protected get dataVersion(): Version {
